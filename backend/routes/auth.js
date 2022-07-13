@@ -1,34 +1,28 @@
-const express = require('express')
+const express = require("express")
+const User = require("../models/user")
 const router = express.Router()
 
-// middleware that is specific to this router
-router.use((req, res, next) => {
-  console.log('Time: ', Date.now())
-  next()
-})
-// define the landing page route
-router.get('/', (req, res) => {
-  res.send('Birds home page')
-})
-// define the home route
-router.get('/home', (req, res) => {
-  res.send('About birds')
+
+router.post("/login", async(req,res,next)=>{
+    try{
+        //take the user email and password and attempting to authentocate them
+
+        const user = await User.login(req.body)
+        return res.status(200).json({user})
+    }catch(err){
+        next(err)
+
+    }
 })
 
-// define the about route
-router.get('/login', (req, res) => {
-    res.send('login')
-  })
-
-
-// define the register route
-router.get('/register', (req, res) => {
-    res.send('register')
-  })
-// define the nutrition route
-router.get('/nutrition', (req, res) => {
-    res.send('nutrition')
-  })
-    
+router.post("/register",async(req,res,next)=>{
+    try{
+        //take the users email,passowrd,rsvp status and the number of guests and create a new user in our database
+        const user = await User.register(req.body)
+        return res.status(201).json({user})
+    }catch(err){
+        next(err)
+    }
+})
 
 module.exports = router
