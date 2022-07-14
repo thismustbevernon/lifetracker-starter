@@ -10,8 +10,7 @@ class User {
       firstName: user.firstName,
       lastName: user.lastName,
       email: user.email,
-      username: user.username
-  
+      username: user.username,
     };
   }
   static async login(credentials) {
@@ -54,10 +53,9 @@ class User {
     const requiredFields = [
       "firstName",
       "lastName",
-      "location",
       "email",
-      "username"
- 
+      "username",
+      "password",
     ];
     console.log(credentials);
     requiredFields.forEach((field) => {
@@ -85,23 +83,22 @@ class User {
     const result = await db.query(
       `
         INSERT INTO users(
-            firstName,
-            lastName,
+            first_name,
+            last_name,
             email,
             username,
             password
           
         )
-        VALUES ($1,$2,$3,$4,$5,$6)
-        RETURNING id,firstName,lastName,email,location,date;
+        VALUES ($1,$2,$3,$4,$5)
+        RETURNING id,first_name,last_name,email,username;
         `,
       [
         credentials.firstName,
         credentials.lastName,
         lowercasedEmail,
         credentials.username,
-        hashedPassword
-     
+        hashedPassword,
       ]
     );
 
@@ -125,5 +122,3 @@ class User {
 }
 
 module.exports = User;
-
-
