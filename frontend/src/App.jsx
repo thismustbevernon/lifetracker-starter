@@ -7,26 +7,36 @@ import Landing from "./components/Landing/Landing";
 import Login from "./components/Login/Login";
 import Register from "./components/Register/Register";
 
-import Nutrition from "./components/Nutrition/Nutrition";
+//import Nutrition from "./components/Nutrition/Nutrition";
 import Activity from "./components/Activity/Activity";
 
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import NutritionOverview from "./components/Nutrition/NutritionOverview";
+import NutritionNew from "./components/Nutrition/NutritionNew";
+
+import { BrowserRouter, Routes, Route} from "react-router-dom";
 
 // import Container from "@mui/material/Container";
 
-
 function App() {
-  const [appState, setAppState] = useState({})
+  const [appState, setAppState] = useState({});
   return (
     <div>
       <BrowserRouter>
         <Navbar />
         <Routes>
           <Route path="/" element={<Landing />} />
-          <Route path="/login" element={<Login setAppState={setAppState} />}/>
-          <Route path="/register"  element={<Register setAppState={setAppState} />}/>
-          <Route path="/nutrition" element={<Nutrition />} />
-          <Route path="/activity" element={<Activity />} />
+          <Route path="/login" element={<Login setAppState={setAppState} />} />
+          <Route
+            path="/register"
+            element={<Register setAppState={setAppState} />}
+          />
+
+          <Route path="/nutrition" element={<NutritionOverview />} />
+          <Route path="/nutrition/create" element={<NutritionNew />} />
+
+          {/* <Route path="/nutrition" element={<Nutrition />} />
+
+          <Route path="/activity" element={<Activity />} /> */}
           {/* <Route
             path="/activity"
             element={<ProtectedRoute element={<ActivityPage />} />}
