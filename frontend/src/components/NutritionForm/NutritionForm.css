@@ -1,0 +1,29 @@
+.nutrition-form{
+    display: flex;
+    align-items: center;
+    margin-top: 0;
+    margin-left: 10%;
+    margin-right: 3%;
+}
+.nutrition-form .container{
+    flex-direction: column;
+}
+.nutrition-form .form-input{
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+.nutrition-form h2{
+    margin-bottom: -5px;
+}
+.nutrition-form .split-form-input{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    grid-gap: 20px;
+    gap: 20px;
+}
+.nutrition-form .form-input{
+    margin-top: 0;
+    margin-bottom: 15px;
+    width: 97%;
+}

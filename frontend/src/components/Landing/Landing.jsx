@@ -1,51 +1,52 @@
 import * as React from "react";
+import "./Landing.css";
 
 export default function Landing() {
   return (
-    <div className="hero">
-      {/* <img src={trackerImage} alt="hero img" /> */}
-      <h1>Life Tracker</h1>
-      <p>Helping you take back control of your world</p>
-      <h1>THIS IS THE LANDING PAGE </h1>
+    <div className="landing-page">
+      <div className="hero">
+        <img
+          className="hero-img"
+          src="http://codepath-lifetracker.surge.sh/static/media/smartwatch-screen-digital-device.e2983a85.svg"
+          alt="hero-img"
+        />
+        <h1>Life Tracker</h1>
+        <p>Helping you take back control of your world</p>
+      </div>
+      <div className="icons">
+        <div className="icon">
+          <img
+            className="img"
+            src="http://codepath-lifetracker.surge.sh/static/media/icons-workout-48.4f4cdb05.svg"
+            alt="Fitness"
+          />
+          <p className="label">Fitness</p>
+        </div>
+        <div className="icon">
+          <img
+            className="img"
+            src="http://codepath-lifetracker.surge.sh/static/media/icons8-porridge-100.132d2715.svg"
+            alt="Food"
+          />
+          <p className="label">Food</p>
+        </div>
+        <div className="icon">
+          <img
+            className="img"
+            src="	http://codepath-lifetracker.surge.sh/static/media/icons8-resting-100.81067336.svg"
+            alt="Rest"
+          />
+          <p className="label">Rest</p>
+        </div>
+        <div className="icon">
+          <img
+            className="img"
+            src="http://codepath-lifetracker.surge.sh/static/media/icons8-planner-100.997ca54c.svg"
+            alt="Planner"
+          />
+          <p className="label">Planner</p>
+        </div>
+      </div>
     </div>
   );
 }
-
-
-
-
-
-// import trackerImage from "assets/smartwatch-screen-digital-device.svg"
-// import workout from "assets/icons-workout-48.svg"
-// import planner from "assets/icons8-planner-100.svg"
-// import porridge from "assets/icons8-porridge-100.svg"
-// import resting from "assets/icons8-resting-100.svg"
-// import "./Landing.css"
-
-// const tileData = [
-//   { label: "Fitness", image: workout, id: 1 },
-//   { label: "Food", image: porridge, id: 2 },
-//   { label: "Rest", image: resting, id: 3 },
-//   { label: "Planner", image: planner, id: 4 },
-// ]
-
-// export default function Landing() {
-//   return (
-//     <div className="Landing">
-//       <div className="hero">
-//         <img src={trackerImage} alt="hero img" />
-//         <h1>Life Tracker</h1>
-//         <p>Helping you take back control of your world</p>
-//       </div>
-
-//       <div className="tiles">
-//         {tileData.map(({ label, image, id }) => (
-//           <div className="tile" key={id}>
-//             <img src={image} alt={label} />
-//             <p>{label}</p>
-//           </div>
-//         ))}
-//       </div>
-//     </div>
-//   )
-// }

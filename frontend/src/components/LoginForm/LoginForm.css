@@ -1,0 +1,98 @@
+.footer p {
+    color: black;
+  }
+  .link {
+    color: black;
+  }
+  .login-form {
+    display: flex;
+    align-items: center;
+    /* background: #2c4147; */
+    background:black;
+  }
+  .login-form h2 {
+    color: white;
+    margin-bottom: 0;
+  }
+  .login-form label {
+    color: white;
+  }
+  .login-form .container {
+    flex-direction: column;
+  }
+  .login-form .container h2 {
+    font-size: 42px;
+    font-weight: 600;
+  }
+  .inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 80%;
+  }
+  .form-input {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 80%;
+    margin-left: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  label {
+    margin-bottom: 5px;
+  }
+  .form-input input {
+    height: 50px;
+    padding: 0 15px;
+    font-size: 16px;
+    border: 1px solid white;
+    width: 100%;
+    background: transparent;
+    color:black;
+  }
+  
+  .error {
+    color: red;
+    padding-top: 20px;
+    font-style: normal;
+  }
+  
+  .login-err {
+    color: white;
+    padding-top: 20px;
+    font-style: normal;
+  }
+  
+  .inputs .btn {
+    width: 80%;
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    height: 70px;
+    border: none;
+    cursor: pointer;
+    margin-top: 15px;
+    font-size: 20px;
+  }
+  
+  .footer {
+    border-top: 1px solid white;
+    margin-top: 30px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -75px;
+    width: 60%;
+  }
+  .blank {
+    color: transparent;
+  }
+  .footer p {
+    color: white;
+  }
+  .footer a {
+    color:white;
+    font-weight: 450;
+  }

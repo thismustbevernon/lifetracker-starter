@@ -1,0 +1,21 @@
+
+.exercise-feed{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    grid-gap: 10px;
+    gap: 10px;
+    margin-top: 50px;
+    padding-bottom: 50px;
+}
+.empty{
+    margin: 0 auto;
+}
+.empty{
+    font-size: 32px;
+    color: white;
+    padding: 10px 20px;
+    /* border: 1px solid white;
+    border-radius: 4px; */
+}
+

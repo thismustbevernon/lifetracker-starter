@@ -1,0 +1,32 @@
+.exercise-form{
+    display: flex;
+    align-items: center;
+    margin-top: 0;
+    margin-left: 10%;
+    margin-right: 3%;
+}
+.exercise-form .container{
+    flex-direction: column;
+}
+.exercise-form .form-input{
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+.exercise-form h2{
+    margin-bottom: -5px;
+}
+.exercise-form .split-form-input{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    grid-gap: 20px;
+    gap: 20px;
+}
+.exercise-form .form-input{
+    margin-top: 0;
+    margin-bottom: 15px;
+    width: 97%;
+}
+.exercise-form .save-btn{
+    background: #ffab09;
+}

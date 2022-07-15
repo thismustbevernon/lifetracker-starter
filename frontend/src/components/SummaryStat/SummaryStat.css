@@ -1,0 +1,37 @@
+.summary-stat{
+    border: 1px solid black;
+    width: 360px;
+    height: 214px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    /* margin: 5px; */
+    margin-bottom: 30px;
+    color: white;
+}
+.card-cat{
+    justify-content: space-around;
+    padding: 16px 32px;
+    background: linear-gradient(64.7deg, #1000c9, #00c98e);
+}
+.card-day{
+    justify-content: space-around;
+    padding: 16px 32px;
+    background: linear-gradient(64.7deg, #8e3232, #c96d00);
+}
+h3{
+    margin-top: 0;
+}
+p{
+    margin-top: 0; 
+    color: white;
+}
+.primary-statistic{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+}
+.stat-label{
+    display: flex;
+    justify-content: center;
+}

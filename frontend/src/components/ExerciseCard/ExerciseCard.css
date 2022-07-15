@@ -1,0 +1,65 @@
+.exercise-card{
+    width: 360px;
+    height: 220px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    padding: 16px 32px;
+    background: linear-gradient(64.7deg, #ffab09, #ffab09);
+}
+.card-header{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: -20px;
+    margin-left: -10px;
+}
+.card-header img{
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    margin-right: 10px;
+}
+.titles{
+    color: white;
+    margin-left: 10px;
+    font-size: 35px;
+}
+.card-stats{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.cardStat{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -30px;
+}
+.cardStat p{
+    color: white;
+    font-weight: 400;
+    font-size: 22px;
+    margin-bottom: 0;
+}
+.cardStat span{
+    font-size: 40px;
+    color: white;
+    font-weight: 400;
+}
+.card-meta{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+small{
+    color: white;
+}
+.categoryy{
+    color: white;
+    border: 1px solid white;
+    border-radius: 8px;
+    padding: 8px 12px;
+}

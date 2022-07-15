@@ -1,0 +1,70 @@
+.activity-feed {
+    display: flex;
+    flex-direction: column;
+    background: #2c4147;
+  }
+  
+  .actions {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 20%;
+    margin-right: 20%;
+    width: 100%;
+  }
+  .stats {
+    width: 80%;
+    margin-left: 10%;
+  }
+  .btnd {
+    margin-left: 400px;
+    padding: 10px;
+  }
+  h2 {
+    font-size: 42px;
+    margin-left: -100px;
+    color: white;
+  }
+  h4 {
+    font-weight: 700;
+    font-size: 30px;
+    color: white;
+  }
+  .button-e {
+    background: transparent;
+    font-size: 18px;
+    padding: 10px;
+    border: 1px solid #03c5d1;
+    color: #03c5d1;
+    margin: 10px;
+  }
+  
+  .button-n {
+    background: transparent;
+    font-size: 18px;
+    padding: 10px;
+    border: 1px solid #03c5d1;
+    color: #03c5d1;
+    margin: 10px;
+  }
+  
+  .button-s {
+    background: transparent;
+    font-size: 18px;
+    padding: 10px;
+    border: 1px solid #03c5d1;
+    color: #03c5d1;
+    margin: 10px;
+  }
+  
+  .per-category {
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+  .per-day {
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+  .stats .here {
+    margin-left: 380px;
+  }

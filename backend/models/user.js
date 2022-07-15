@@ -1,3 +1,5 @@
+
+
 const db = require("../db");
 const { BCRYPT_WORK_FACTOR } = require("../config");
 const { BadRequestError, UnauthorizedError } = require("../utils/errors");
@@ -88,7 +90,7 @@ class User {
             email,
             username,
             password
-          
+
         )
         VALUES ($1,$2,$3,$4,$5)
         RETURNING id,first_name,last_name,email,username;
