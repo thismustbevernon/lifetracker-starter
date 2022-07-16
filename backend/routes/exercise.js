@@ -31,8 +31,7 @@ router.get("/", async (req, res, next) => {
 
 router.post("/", security.requireAuthenticatedUser, async (req, res, next) => {
   try {
-    //accept a request body with one nutrition key maybe like
-    //{"nutrition": {attributes of nutrition entry}}
+ 
     const { user } = res.locals;
     const exercise = await Exercise.createExercise({
       user,
@@ -46,8 +45,7 @@ router.post("/", security.requireAuthenticatedUser, async (req, res, next) => {
 
 router.get("/:exerciseId", async (req, res, next) => {
   try {
-    //return a json response back with one user-owned nutrition
-    //in an oject like { "nutrition": {...}}
+ 
     const { exerciseId } = req.params;
     const exercise = await Exercise.fetchExerciseById(exerciseId);
     return res.status(200).json({ exercise });

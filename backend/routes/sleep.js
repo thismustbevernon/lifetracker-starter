@@ -17,8 +17,7 @@ router.get("/", async (req, res, next) => {
 
 router.post("/", security.requireAuthenticatedUser, async (req, res, next) => {
   try {
-    //accept a request body with one nutrition key maybe like
-    //{"nutrition": {attributes of nutrition entry}}
+
     const { user } = res.locals;
     const sleep = await Sleep.createSleep({ user, sleep: req.body });
     return res.status(201).json({ sleep });
@@ -29,8 +28,7 @@ router.post("/", security.requireAuthenticatedUser, async (req, res, next) => {
 
 router.get("/:sleepId", async (req, res, next) => {
   try {
-    //return a json response back with one user-owned nutrition
-    //in an oject like { "nutrition": {...}}
+   
     const { sleepId } = req.params;
     const sleep = await Sleep.fetchSleepById(sleepId);
     return res.status(200).json({ sleep });

@@ -85,39 +85,3 @@ module.exports = Exercise;
 
 
 
-// import db from "../db.js";
-
-// export class Exercise {
-//   static async listUserExercise(user) {
-//     const result = await db.query(
-//       ` SELECT * 
-//               FROM exercise
-//               WHERE user_id = $1;
-//             `,
-//       [user.id]
-//     );
-
-//     return result.rows;
-//   }
-
-//   static async createUserExercise(user) {
-   
-//     const userEmail = user.user.email;
-//     const exercise = user.exercise;
-
-
-//     await db.query(
-//       `
-//             INSERT INTO exercises (username, name, category, duration, intensity)
-//             VALUES ((SELECT username FROM users WHERE email = $1), $2, $3, $4, $5);
-//         `,
-//       [
-//         userEmail,
-//         exercise.name,
-//         exercise.category,
-//         exercise.duration,
-//         exercise.intensity,
-//       ]
-//     );
-//   }
-// }
