@@ -1,5 +1,3 @@
-
-
 import * as React from "react";
 import SleepForm from "../SleepForm/SleepForm";
 import "./SleepNew.css";

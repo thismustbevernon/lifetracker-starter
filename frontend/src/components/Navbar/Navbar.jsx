@@ -8,11 +8,9 @@ export default function Navbar(props) {
         <nav className="navbar">
             <div className="container">
                 <div className="logo">
-
-                    Logo
-                    {/* <Link to="/">
+                    <Link to="/">
                         <img src="http://codepath-lifetracker.surge.sh/static/media/codepath.70a9a31f.svg" alt="logo"/>
-                    </Link> */}
+                    </Link>
                 </div>
                 <NavLink handleLogout={props.handleLogout} isLogin={props.isLogin}  user={props.user} setUser={props.setUser}/>
             </div>

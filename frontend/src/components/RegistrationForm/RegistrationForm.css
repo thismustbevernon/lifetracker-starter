@@ -1,43 +1,43 @@
 .registeration-form {
-    display: flex;
-    align-items: center;
-    margin-top: -40px;
-  }
-  .registeration-form .container {
-    flex-direction: column;
-  }
-  .registeration-form .form-input {
-    margin-top: 0;
-    margin-bottom: 15px;
-  }
-  .registeration-form .title {
-    margin-bottom: 0;
-  }
-  label {
-    color: white;
-  }
-  .split-form-input {
-    display: flex;
-    flex-direction: row;
-    width: 83%;
-    grid-gap: 20px;
-    gap: 20px;
-  }
-  .save-btn {
-    width: 78%;
-    margin-left: 20px;
-    margin-top: 20px;
-    color: white;
-    background: #03c5d1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 16px 20px;
-    border-radius: 4px;
-    cursor: pointer;
-    font-weight: 600;
-    font-size: 16px;
-    outline: none;
-    border: 1px solid transparent;
-    margin-bottom: 30px;
-  }
+  display: flex;
+  align-items: center;
+  margin-top: -40px;
+}
+.registeration-form .container {
+  flex-direction: column;
+}
+.registeration-form .form-input {
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+.registeration-form .title {
+  margin-bottom: 0;
+}
+label {
+  color: white;
+}
+.split-form-input {
+  display: flex;
+  flex-direction: row;
+  width: 83%;
+  grid-gap: 20px;
+  gap: 20px;
+}
+.save-btn {
+  width: 78%;
+  margin-left: 20px;
+  margin-top: 20px;
+  color: white;
+  background: #03c5d1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 16px;
+  outline: none;
+  border: 1px solid transparent;
+  margin-bottom: 30px;
+}

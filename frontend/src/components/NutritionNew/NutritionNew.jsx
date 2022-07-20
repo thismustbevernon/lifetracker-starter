@@ -1,5 +1,3 @@
-
-
 import * as React from "react"
 import "./NutritionNew.css"
 import NutritionForm from "../NutritionForm/NutritionForm"

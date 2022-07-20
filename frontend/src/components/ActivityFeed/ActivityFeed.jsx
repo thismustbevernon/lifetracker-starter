@@ -1,11 +1,8 @@
 import * as React from "react";
 import "./ActivityFeed.css";
 import { useState, useEffect } from "react";
-// import SummaryStat from "components/SummaryStat/SummaryStat";
-
 import SummaryStat from "../SummaryStat/SummaryStat";
 import { Link } from "react-router-dom";
-// import apiClient from "../../services/apiClient";
 import apiClient from "../../services/apiClient";
 
 export default function ActivityFeed(props) {

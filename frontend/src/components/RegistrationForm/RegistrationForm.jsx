@@ -13,6 +13,7 @@ export default function RegistrationForm(props) {
   const [form, setForm] = useState({
     email: "",
     username: "",
+    //changed
     firstName: "",
     lastName: "",
     password: "",
@@ -64,6 +65,7 @@ export default function RegistrationForm(props) {
     const { data, error } = await apiClient.signUpUser({
       email: form.email,
       username: form.username,
+      //changed
       firstName: form.firstName,
       lastName: form.lastName,
       password: form.password,
@@ -87,7 +89,7 @@ export default function RegistrationForm(props) {
         <br />
         <div className="inputs">
           <div className="form-input">
-            <label htmlFor="email">Email</label>
+            <label form="email">Email</label>
             <input
               type="email"
               name="email"
@@ -98,7 +100,7 @@ export default function RegistrationForm(props) {
             {errors.email && <span className="error">{errors.email}</span>}
           </div>
           <div className="form-input">
-            <label htmlFor="username">Username</label>
+            <label form="username">Username</label>
             <input
               type="text"
               name="username"
@@ -114,11 +116,13 @@ export default function RegistrationForm(props) {
             <div className="form-input">
               <input
                 type="text"
+                //changed
                 name="firstName"
                 placeholder="First Name"
                 value={form.first_name}
                 onChange={handleOnInputChange}
               />
+              {/*changed*/}
               {errors.firstName && (
                 <span className="error">{errors.firstName}</span>
               )}
@@ -137,7 +141,7 @@ export default function RegistrationForm(props) {
             </div>
           </div>
           <div className="form-input">
-            <label htmlFor="password">Password</label>
+            <label for="password">Password</label>
             <input
               type="password"
               name="password"
@@ -150,7 +154,7 @@ export default function RegistrationForm(props) {
             )}
           </div>
           <div className="form-input">
-            <label htmlFor="passwordConfirm">Confirm Password</label>
+            <label for="passwordConfirm">Confirm Password</label>
             <input
               type="password"
               name="passwordConfirm"

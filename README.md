@@ -1,5 +1,4 @@
 
-
 # Week 3 Assignment: Life Tracker
 
 Submitted by: VERNON OWENGA OTIENO
